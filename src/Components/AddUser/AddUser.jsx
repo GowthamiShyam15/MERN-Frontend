@@ -31,7 +31,7 @@ const AddUser = () => {
   // step-5
   const submitForm = async (e) => {
     e.preventDefault();
-    await axios.post("https://mern-backend-ud4j.onrender.com//user/create", user)
+    await axios.post("https://mern-backend-ud4j.onrender.com/user/create", user)
       .then((response) => {
         // console.log(response);
         //step-7

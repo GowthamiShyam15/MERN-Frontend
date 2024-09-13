@@ -26,7 +26,7 @@ const UpdateUser = () => {
 }
 // step-4:
 useEffect(()=>{
-    axios.put(`https://mern-backend-ud4j.onrender.com//user/update/${id}`)
+    axios.put(`https://mern-backend-ud4j.onrender.com/user/update/${id}`)
     .then((response)=>{
         // console.log(response);
         //step-5
@@ -41,7 +41,7 @@ useEffect(()=>{
 //step - 6:
 const submitForm = async(e)=>{
     e.preventDefault();
-    await axios.put(`https://mern-backend-ud4j.onrender.com//user/update/${id}`, user)
+    await axios.put(`https://mern-backend-ud4j.onrender.com/user/update/${id}`, user)
       .then((response) => {
         // console.log(response);
         //step-7

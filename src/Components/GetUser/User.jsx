@@ -11,7 +11,7 @@ const User = () => {
   //step-1:
   useEffect(()=>{
     const fetchData = async()=>{
-     const response = await axios.get("https://mern-backend-ud4j.onrender.com//user/allusers");
+     const response = await axios.get("https://mern-backend-ud4j.onrender.com/user/allusers");
      //step-3:
      setUsers(response.data)
     }
@@ -22,7 +22,7 @@ const User = () => {
 
   //Deletion
   const deleteUser = async(userId)=>{
-    await axios.delete(`https://mern-backend-ud4j.onrender.com//user/delete/${userId}`)
+    await axios.delete(`https://mern-backend-ud4j.onrender.com/user/delete/${userId}`)
     .then((response)=>{
       setUsers((prevUser) => prevUser.filter((user) => user._id !== userId));
       //console.log(response);
